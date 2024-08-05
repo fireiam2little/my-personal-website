@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin-top: 60px;
+            text-align: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的個人履歷</h1>
+    </header>
+    <nav>
+        <a href="#about">個人簡介</a>
+        <a href="#experience">工作經歷</a>
+        <a href="#education">教育背景</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">項目經驗</a>
+        <a href="#contact">聯絡方式</a>
+    </nav>
+    <div class="container">
+        <img src="0805.jpg" alt="Profile Image" class="profile-image">
+        <div class="section" id="about">
+            <h2>個人簡介</h2>
+            <p>你好！我是黃偉誠，這是我的個人履歷網站。我是一名電腦工程師，擁有2年的經驗。我的專長包括資安、網路。</p>
+        </div>
+        <div class="section" id="experience">
+            <h3>工作經歷</h3>
+            <ul>
+                <li><strong>創虹科技有限公司</strong> - 基隆看守所承攬工程師（2022/7 - 在職中）
+                    <ul>
+                        <li>負責全所電腦維修及網路管理</li>
+                        <li>協助伺服器架設及維護</li>
+                    </ul>
+                </li>
+                <!-- 重複上面的列表項目來添加更多工作經歷 -->
+            </ul>
+        </div>
+        <div class="section" id="education">
+            <h3>教育背景</h3>
+            <ul>
+                <li><strong>景文科技大學</strong> - 學士（2017/9 - 2021/6）
+                    <ul>
+                        <li>行動商務與多媒體應用系</li>
+                    </ul>
+                </li>
+                <!-- 重複上面的列表項目來添加更多教育背景 -->
+            </ul>
+        </div>
+        <div class="section" id="skills">
+            <h3>技能</h3>
+            <ul>
+                <li>伺服器架設-WSUS、AD、DB</li>
+                <li>程式設計-SQL sver、Python、html</li>
+                <li>硬體維護-電腦、印表機、NAS</li>
+                <li>資安-防火牆安裝及政策撰寫、防毒軟體的政策撰寫、kali linux滲透測試、伺服器弱掃及弱掃修補</li>
+                <li>網路-cisco主機架設及網路架構繪製</li>
+                <li>備分及還原-實體以備份機做還原點、虛擬做檢查點、git設定</li>
+                <li>虛擬機-VMware及Hyper-V設定</li>
+                <!-- 添加更多技能 -->
+            </ul>
+        </div>
+        <div class="section" id="projects">
+            <h3>項目經驗</h3>
+            <ul>
+                <li><strong>內部稽核</strong> - 檢核使用者是否安裝非公務用軟體以及是 否有任何跟資安風險有關行為
+                    <ul>
+                        <li>負責整體計畫的檢查及安排</li>
+                    </ul>
+                </li>
+                <!-- 重複上面的列表項目來添加更多項目經驗 -->
+            </ul>
+        </div>
+        <div class="section contact" id="contact">
+            <h3>聯絡方式</h3>
+            <p>Email: <a href="mailto:[你的Email]">ken2tw@yahoo.com.tw</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 黃偉誠。版權所有。</p>
+    </footer>
+</body>
+</html>
